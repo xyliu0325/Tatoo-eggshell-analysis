@@ -1,0 +1,51 @@
+{
+  "data_root": ".\\input_data\\excel",
+  "out_dir": ".\\runs\\stage1_weighted",
+  "feature_version": "v2",
+  "mode": "random",
+  "val_rate": 0.3,
+  "seed": 999,
+  "n_trials": 100,
+  "prefer_metric": "acc",
+  "final_split": "random",
+  "n_seeds": 3,
+  "no_stack": true,
+  "no_shap": false,
+  "perm_repeats": 10,
+  "image_root": ".\\input_data\\image",
+  "spot_coord_file": "",
+  "spot_rows": 4,
+  "spot_cols": 5,
+  "shap_overlay_max_samples": 40,
+  "feature_dim": 423,
+  "class_names": [
+    "Alive",
+    "Dead"
+  ],
+  "summary": {
+    "random": {
+      "final_tag": "ens",
+      "auc": 1.0,
+      "acc_at_best": 1.0,
+      "best_thresh": 0.3,
+      "confusion_matrix": [
+        [
+          82,
+          0
+        ],
+        [
+          0,
+          8
+        ]
+      ]
+    }
+  },
+  "saved_model_source": "random split",
+  "saved_threshold": 0.3,
+  "ensemble_weights": {
+    "xgb": 0.4,
+    "lgb": 0.2,
+    "rf": 0.2,
+    "et": 0.2
+  }
+}
