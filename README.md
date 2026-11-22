@@ -200,5 +200,3 @@ For batch inference, use `--excel_dir` and `--image_dir` in place of the single-
 | [`train_stage1_v2.py`](classification/train_stage1_v2.py), [`xgb_data.py`](classification/xgb_data.py), and [`features.py`](classification/features.py) | Spreadsheet loading, feature extraction, ensemble training, and evaluation |
 | [`stage2_train/`](classification/stage2_train) | Swin architecture, dataset, training and evaluation utilities, and the Stage 2 entry point |
 | [`predict.py`](classification/predict.py) and [`stage2_io.py`](classification/stage2_io.py) | Checkpoint loading, image transforms, input pairing, and cascade inference |
-
-For a source release, keep pretrained binaries, full datasets, and generated run outputs outside ordinary Git history. Publish the small example pairs with the code, and document where to obtain any model files required for inference. [GitHub guidance on large files](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)
